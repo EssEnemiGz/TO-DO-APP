@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO - APP</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,11 +15,13 @@
         <article class="content">
             <h1 class="main-tittle">TO DO List</h1>
             <section class="main-task-container">
-                <section class="task-list">
+                <section class="task-list" id="sin-empezar">
                     <h3 class="label">Sin empezar</h3>
                     <div class="task">
                         <p class="desc">Tarea de ejemplo</p>
                     </div>
+                    <input type="text" name="add" id="add" class="add">
+                    <button onclick="main()">Agregar tarea</button>
                 </section>
                 <section class="task-list">
                     <h3 class="label">En progreso</h3>
@@ -34,6 +38,8 @@
             </section>
         </article>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
