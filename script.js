@@ -19,3 +19,47 @@ function main(){
         input.classList.add('visible') 
     }
 }
+
+const system = () => { // Arrow function o Funciones de flecha
+    const input = document.getElementById('add').value;
+
+    const container = document.getElementsByClassName('task')[0]
+    const element = document.createElement('p');
+    element.innerText = input;
+
+    container.appendChild(element)
+    return 0;
+}
+
+function system2(){
+    const input = document.getElementById('add').value;
+
+    const container = document.getElementsByClassName('task')[0]
+    const element = document.createElement('p');
+    element.innerText = input;
+
+    container.appendChild(element)
+    return 0;
+}
+
+() => { // Funcion lambda o anonima
+    console.log(1)
+}
+
+let suma = (num1, num2) => {
+    num1 = 30
+    return num1 + num2
+}
+
+// Pass by reference
+let y, z;
+y = 10;
+z = 20;
+
+const x = suma;
+console.log(x(y, z))
+
+suma = (num1, num2) => {
+    return num1 + num2
+}
+console.log(x(y, z))
