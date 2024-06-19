@@ -1,0 +1,112 @@
+:root{
+    --fs-1: 2.4rem;
+    --fs-2: 1.180rem;
+
+    --fw-500: 500;
+
+    --ff-vietnam: "Be Vietnam Pro", sans-serif;
+}
+
+body{
+    font-family: var(--ff-vietnam);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 100%;
+    padding-block: 24px;
+    gap: 8px;
+}
+
+.main-title{
+    font-size: var(--fs-1);
+}
+
+.main-task-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+}
+
+.pendiente, .haciendo, .hecho{
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    max-height: 1.6rem;
+    border-radius: 32px;
+    gap: 8px;
+}
+
+.pendiente{
+    background-color: rgba(215, 34, 34, 0.6);
+    color: rgb(211, 14, 14);
+}
+
+.haciendo{
+    background-color: rgba(34, 161, 215, 0.6);
+    color: rgb(4, 149, 211);
+}
+
+.hecho{
+    background-color: rgba(49, 215, 34, 0.6);
+    color: rgb(17, 209, 0);
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.new{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+}
+
+.desc{
+    font-size: var(--fs-2);
+    font-weight: var(--fw-500);
+}
+
+.add{
+    display: none;
+    padding-block: 12px;
+    padding-inline: 12px;
+    border: none;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.add:focus{
+    outline: none;
+}
+
+.visible{
+    display: block;
+}
+
+span.button{
+    margin-block: 24px;
+    font-size: 28px;
+    padding: 4px 24px;
+    border: 2px solid #888888;
+    text-align: center;
+    border-radius: 6px;
+    color: #888888;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.--clickable:hover{
+    cursor: pointer;
+}
